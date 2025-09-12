@@ -1,7 +1,8 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+// const API_URL = "http://localhost:9001/api";
+const API_URL2 = "https://task-ytw6.onrenyyyder.com/api";
+const API_URL = "https://task-api.skoegle.com/api";
 
-const API_URL = "https://task-ytw6.onrender.com/api";
-const API_URL2 = "https://task-api.skoegle.com/api";
 
 // Create two base queries
 const baseQuery1 = fetchBaseQuery({ baseUrl: API_URL });
