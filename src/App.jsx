@@ -7,7 +7,7 @@ import { Toaster } from "sonner";
 import { Navbar, Sidebar } from "./components";
 import { Dashboard, Login, TaskDetail, Tasks, Trash, Users, Anoncements} from "./pages";
 import { setOpenSidebar } from "./redux/slices/authSlice";
-
+import Update from "./pages/Update";
 function Layout() {
   const { user } = useSelector((state) => state.auth);
   const location = useLocation();
@@ -100,6 +100,7 @@ const App = () => {
             <Route path='/task/:id' element={<TaskDetail />} />
             <Route path='/team' element={<Users />} />
             <Route path='/announcements' element={<Anoncements />} />
+            <Route path='/update' element={<Update />} />
 
           </Route>
 

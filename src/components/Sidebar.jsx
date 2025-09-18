@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React from "react";
-import { FaTasks, FaTrashAlt, FaUsers } from "react-icons/fa";
+import { FaTasks, FaSync ,FaTrashAlt, FaUsers } from "react-icons/fa";
 import {
   MdDashboard,
   MdOutlineAddTask,
@@ -43,6 +43,11 @@ const linkData = [
     link: "team",
     icon: <FaUsers />,
   },
+  {
+  label: "Update Sheets",
+  link: "update",
+  icon: <FaSync />,
+},
   {
     label: "Trash",
     link: "trashed",
