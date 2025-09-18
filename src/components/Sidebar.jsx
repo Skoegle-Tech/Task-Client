@@ -38,16 +38,17 @@ const linkData = [
     link: "todo/todo",
     icon: <MdOutlinePendingActions />,
   },
+    {
+  label: "Update Sheets",
+  link: "update",
+  icon: <FaSync />,
+},
   {
     label: "Team",
     link: "team",
     icon: <FaUsers />,
   },
-  {
-  label: "Update Sheets",
-  link: "update",
-  icon: <FaSync />,
-},
+
   {
     label: "Trash",
     link: "trashed",
@@ -61,7 +62,7 @@ const Sidebar = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const path = location.pathname.split("/")[1];
-  const sidebarLinks = user?.isAdmin ? linkData : linkData.slice(0, 5);
+  const sidebarLinks = user?.isAdmin ? linkData : linkData.slice(0, 6);
 
   const closeSidebar = () => {
     dispatch(setOpenSidebar(false));
